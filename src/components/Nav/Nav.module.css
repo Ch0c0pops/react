@@ -1,0 +1,14 @@
+.nav {
+    grid-area: n;
+    background-color: rgba(53, 62, 143, 0.562);
+    padding: 20px;
+}
+
+.item a {
+    color: gainsboro;
+    text-decoration: none;
+}
+
+.item a.active {
+    color: darkblue;
+}

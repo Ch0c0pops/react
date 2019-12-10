@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1U4wQzJotYlUnaObziyD1A9cbLm" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs/DialogItem" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Dialogs\DialogItem" />
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Dialogs\Message" />
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\ProfileInfo" />
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Settings" />
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Music" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="" />
+      <created>1574629163093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574629163093</updated>
+      <workItem from="1574629165672" duration="2769000" />
+      <workItem from="1574702474759" duration="8023000" />
+      <workItem from="1575102505804" duration="8916000" />
+      <workItem from="1575207040953" duration="4327000" />
+      <workItem from="1575477953354" duration="6090000" />
+      <workItem from="1575569258885" duration="4002000" />
+      <workItem from="1575578456595" duration="1071000" />
+      <workItem from="1575615727752" duration="11782000" />
+      <workItem from="1575912544494" duration="5969000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
