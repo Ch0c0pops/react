@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="" />
+    <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/State.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +77,14 @@
       <workItem from="1575615727752" duration="11782000" />
       <workItem from="1575912544494" duration="5969000" />
       <workItem from="1576602657061" duration="1507000" />
-      <workItem from="1576775859482" duration="2763000" />
+      <workItem from="1576775859482" duration="3134000" />
+      <workItem from="1577032031220" duration="214000" />
+      <workItem from="1577032261054" duration="139000" />
+      <workItem from="1577032725644" duration="55000" />
+      <workItem from="1577033041566" duration="32000" />
+      <workItem from="1577033228789" duration="32000" />
+      <workItem from="1577033275607" duration="6000" />
+      <workItem from="1577033707008" duration="5202000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
@@ -79,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576781729248</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="react31">
+      <created>1576781877527</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576781877527</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

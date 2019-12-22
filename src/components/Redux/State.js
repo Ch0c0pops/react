@@ -16,7 +16,6 @@ let postsData = [
 
 let state = {
     profilePage: {
-
         postsData: [
             {id: 1, message: 'howdy', likes: 3},
             {id: 2, message: 'chicken corn', likes: 25}
@@ -37,5 +36,15 @@ let state = {
     }
 
 };
+export let addPost = (postMessage) => {
+    debugger;
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        likes: 4
+    };
+    state.profilePage.postsData.push(newPost);
+};
+
 
 export default state;
