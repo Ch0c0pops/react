@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/State.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/render.jsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +87,14 @@
       <workItem from="1577033228789" duration="32000" />
       <workItem from="1577033275607" duration="6000" />
       <workItem from="1577033707008" duration="5202000" />
-      <workItem from="1577122445963" duration="1954000" />
+      <workItem from="1577122445963" duration="2141000" />
+      <workItem from="1579955375992" duration="1911000" />
+      <workItem from="1580025034267" duration="2787000" />
+      <workItem from="1580235967980" duration="2946000" />
+      <workItem from="1580324000005" duration="6262000" />
+      <workItem from="1580360947378" duration="294000" />
+      <workItem from="1580754515996" duration="4425000" />
+      <workItem from="1580835651443" duration="1114000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
@@ -99,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576781877527</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="react33">
+      <created>1577124830888</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577124830888</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +148,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="react31" />
-    <option name="LAST_COMMIT_MESSAGE" value="react31" />
+    <MESSAGE value="react33" />
+    <option name="LAST_COMMIT_MESSAGE" value="react33" />
   </component>
 </project>
