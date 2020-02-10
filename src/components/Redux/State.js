@@ -23,21 +23,11 @@ let store = {
         }
     },
 
-    getState (){
+    getState() {
         return this._state
     },
     rerenderEntireTree() {
         console.log('hi');
-    },
-    addPost() {
-        let newPost = {
-            id: 5,
-            message: this._state.profilePage.newPostText,
-            likes: 4
-        };
-        this._state.profilePage.postsData.push(newPost);
-        this.updateNewPostText('');
-        this.rerenderEntireTree(this._state);
     },
 
     updateNewPostText(newText) {
@@ -47,6 +37,22 @@ let store = {
 
     subscribe(observer) {
         this.rerenderEntireTree = observer;
+    },
+
+    dispatch(action) {
+        if (action.type === 'ADD-POST') {
+            let newPost = {
+                id: 5,
+                message: this._state.profilePage.newPostText,
+                likes: 4
+            };
+            this._state.profilePage.postsData.push(newPost);
+            this.updateNewPostText('');
+            this.rerenderEntireTree(this._state);
+        } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+            this._state.profilePage.newPostText = action.newText;
+            this.rerenderEntireTree(this._state);
+        }
     },
 };
 export default store;
