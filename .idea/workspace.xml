@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/State.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +95,8 @@
       <workItem from="1580835651443" duration="2344000" />
       <workItem from="1581340568946" duration="1203000" />
       <workItem from="1581364791250" duration="2435000" />
-      <workItem from="1581536375613" duration="1775000" />
+      <workItem from="1581536375613" duration="2060000" />
+      <workItem from="1581764405969" duration="8385000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
@@ -116,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577124830888</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="react39">
+      <created>1581538224794</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581538224794</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="react31" />
     <MESSAGE value="react33" />
-    <option name="LAST_COMMIT_MESSAGE" value="react33" />
+    <MESSAGE value="react39" />
+    <option name="LAST_COMMIT_MESSAGE" value="react39" />
   </component>
 </project>
