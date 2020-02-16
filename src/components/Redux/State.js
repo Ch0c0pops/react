@@ -1,7 +1,5 @@
-const ADD_POST = 'ADD_POST';
-const UPDATE_NEW_POST_TEXT ='UPDATE_NEW_POST_TEXT';
-const UPDATE_NEW_MESSAGE_BODY ='UPDATE_NEW_MESSAGE_BODY';
-const SEND_MESSAGE = 'SEND_MESSAGE';
+import profilePageReducer from "./ProfileReducer";
+import dialogsPageReducer from "./DialogsReducer";
 
 let store = {
 
@@ -37,10 +35,10 @@ let store = {
     },
 
     updateNewPostText(newText) {
-        this._state.profilePage.newPostText = newText;
+        this._state.profilePage.newPostText = newText;  //эта функция не нужна в принципе с приходом ProfilePageReducer
         this.rerenderEntireTree(this._state);
     },
-    _callsubscriber(){
+    _callsubscriber() {
         console.log('state has been changed')
     },
     subscribe(observer) {
@@ -48,43 +46,10 @@ let store = {
     },
 
     dispatch(action) {
-        if (action.type === ADD_POST) {
-            let newPost = {
-                id: 5,
-                message: this._state.profilePage.newPostText,
-                likes: 4
-            };
-            this._state.profilePage.postsData.push(newPost);
-            this.updateNewPostText('');
-            this._callsubscriber(this._state);
-        } else if (action.type === UPDATE_NEW_POST_TEXT) {
-            this._state.profilePage.newPostText = action.newText;
-            this._callsubscriber(this._state);
-        } else if (action.type === UPDATE_NEW_MESSAGE_BODY){
-            this._state.dialogsPage.newMessageBody = action.body;
-            this._callsubscriber(this._state);
-        } else if (action.type === SEND_MESSAGE){
-            let body = this._state.dialogsPage.newMessageBody;
-            this._state.dialogsPage.newMessageBody = '';
-           this._state.dialogsPage.messagesData.push({id: 4, message: body});
-            this._callsubscriber(this._state);
-        }
-    },
-};
-
-export const addPostActionCreator = () =>{
-    return {type: ADD_POST}
-};
-export const updateNewPostTextActionCreator = (txt) => {
-    return {type: UPDATE_NEW_POST_TEXT, newText: txt}
-};
-
-export const sendMessageActionCreator = () =>{
-    return {type: SEND_MESSAGE}
-};
-export const updateNewMessageBodyActionCreator = (body) => {
-    return {type: UPDATE_NEW_MESSAGE_BODY, body: body}
-};
-
+        this._state.profilePage = profilePageReducer(this._state.profilePage, action);
+        this._state.dialogsPage = dialogsPageReducer(this._state.dialogsPage, action);
+        this._callsubscriber(this._state);
+    }
+}
 
 export default store;
