@@ -5,15 +5,15 @@ import Message from "./Message/Message";
 import {sendMessageActionCreator, updateNewMessageBodyActionCreator} from "../Redux/DialogsReducer";
 
 const Dialogs = (props) => {
-let state = props.store.getState().dialogsPage;
+    let state = props.store.getState().dialogsPage;
     let dialogsElements = state.dialogsData.map(dialog => <DialogsItem id={dialog.id} name={dialog.name}/>);
     let messagesElements = state.messagesData.map(message => <Message message={message.message}/>);
     let newMessageBody = state.newMessageBody;
 
-    let onSendMessageClick =()=>{
+    let onSendMessageClick = () => {
         props.store.dispatch(sendMessageActionCreator());
     }
-    let onNewMessageChange =(event)=>{
+    let onNewMessageChange = (event) => {
         let body = event.target.value;
         props.store.dispatch(updateNewMessageBodyActionCreator(body));
     }
@@ -27,7 +27,9 @@ let state = props.store.getState().dialogsPage;
                 <div><textarea
                     value={newMessageBody} onChange={onNewMessageChange}></textarea></div>
 
-                <div><button onClick={onSendMessageClick}>send message</button></div>
+                <div>
+                    <button onClick={onSendMessageClick}>send message</button>
+                </div>
             </div>
         </div>
     )
