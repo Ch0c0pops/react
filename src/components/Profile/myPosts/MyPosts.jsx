@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './MyPosts.module.css';
 import Post from './Post/Post';
-import {addPostActionCreator, updateNewPostTextActionCreator} from "../../Redux/ProfileReducer";
 
 let newPostElement = React.createRef();
 const MyPosts = (props) => {
@@ -9,12 +8,12 @@ const MyPosts = (props) => {
     let postsElements = props.postsData.map(post => <Post message={post.message} likeCount={post.likes}/>);
 
     let addNewPost = () => {
-        props.dispatch(addPostActionCreator());
+        props.addPost();
     };
 
     let onTextChange = () => {
         let txt = newPostElement.current.value;
-        props.dispatch(updateNewPostTextActionCreator(txt));
+        props.updateNewPostText(txt);
     };
     return <div className={classes.postsBlock}>
 

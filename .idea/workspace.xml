@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Redux/Redux-Store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPostsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Redux/DialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/DialogsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Redux/ProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/ProfileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +30,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/myPosts" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,11 +41,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\myPosts" />
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\myPosts\Post" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Redux" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Dialogs\DialogItem" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Dialogs\Message" />
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\ProfileInfo" />
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Settings" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -123,7 +118,11 @@
       <workItem from="1581536375613" duration="2060000" />
       <workItem from="1581764405969" duration="8522000" />
       <workItem from="1581855723888" duration="6037000" />
-      <workItem from="1581962419588" duration="3212000" />
+      <workItem from="1581962419588" duration="3322000" />
+      <workItem from="1581967847829" duration="42000" />
+      <workItem from="1582140056381" duration="1093000" />
+      <workItem from="1582221200832" duration="2555000" />
+      <workItem from="1582371065836" duration="4859000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
