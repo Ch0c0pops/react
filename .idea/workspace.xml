@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +29,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/myPosts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,11 +40,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Dialogs" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\myPosts" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\myPosts\Post" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Redux" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Dialogs\DialogItem" />
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Dialogs\Message" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -122,7 +121,7 @@
       <workItem from="1581967847829" duration="42000" />
       <workItem from="1582140056381" duration="1093000" />
       <workItem from="1582221200832" duration="2555000" />
-      <workItem from="1582371065836" duration="4859000" />
+      <workItem from="1582371065836" duration="7427000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
@@ -159,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581797695506</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="react43">
+      <created>1582376344812</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582376344812</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +199,7 @@
     <MESSAGE value="react33" />
     <MESSAGE value="react39" />
     <MESSAGE value="react40" />
-    <option name="LAST_COMMIT_MESSAGE" value="react40" />
+    <MESSAGE value="react43" />
+    <option name="LAST_COMMIT_MESSAGE" value="react43" />
   </component>
 </project>
