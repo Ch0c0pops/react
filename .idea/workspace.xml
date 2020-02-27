@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StoreContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Redux/DialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/DialogsReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Redux/ProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/ProfileReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,7 +124,10 @@
       <workItem from="1582221200832" duration="2555000" />
       <workItem from="1582371065836" duration="7573000" />
       <workItem from="1582452394929" duration="3765000" />
-      <workItem from="1582543792193" duration="3871000" />
+      <workItem from="1582543792193" duration="4433000" />
+      <workItem from="1582552652166" duration="439000" />
+      <workItem from="1582650385980" duration="1203000" />
+      <workItem from="1582827130161" duration="2891000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
