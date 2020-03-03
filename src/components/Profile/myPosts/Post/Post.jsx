@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './Post.module.css';
-import { tsPropertySignature } from '@babel/types';
 
 const Post = (props) => {
   return <div className={classes.content}>

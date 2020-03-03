@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Redux/UsersReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/myPosts/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/myPosts/Post/Post.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Redux/DialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/DialogsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Redux/ProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/ProfileReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Redux/Redux-Store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/Redux-Store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +34,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Users" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,11 +45,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Users" />
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Redux" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Dialogs" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\myPosts" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\myPosts\Post" />
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Redux" />
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Dialogs\DialogItem" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -128,7 +132,9 @@
       <workItem from="1582552652166" duration="439000" />
       <workItem from="1582650385980" duration="1203000" />
       <workItem from="1582827130161" duration="2969000" />
-      <workItem from="1582972334505" duration="4255000" />
+      <workItem from="1582972334505" duration="5077000" />
+      <workItem from="1583168049025" duration="7268000" />
+      <workItem from="1583248169668" duration="8040000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>

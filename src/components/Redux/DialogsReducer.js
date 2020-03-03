@@ -35,6 +35,7 @@ const dialogsPageReducer = (state = initialReducer, action) => {
 
         }
         default:
+
             return state;
     }
 }
