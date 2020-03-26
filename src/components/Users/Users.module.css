@@ -3,3 +3,7 @@
     width: 100px;
     padding: 5px;
 }
+
+.activeButton{
+    font-weight: bold;
+}
