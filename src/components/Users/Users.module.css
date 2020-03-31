@@ -7,3 +7,9 @@
 .activeButton{
     font-weight: bold;
 }
+
+.loader img{
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+}
