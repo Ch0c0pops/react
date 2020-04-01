@@ -1,17 +1,11 @@
 import React from "react";
 import {connect} from "react-redux";
-import {
-    followAC,
-    fetchingToggleAC,
-    setCurrentPageAC,
-    setTotalCountAC,
-    setUsersAC,
-    unfollowAC
-} from "../Redux/UsersReducer";
+import {follow, fetchingToggle, setCurrentPage, setTotalCount, setUsers, unfollow} from "../Redux/UsersReducer";
 import * as axios from "axios";
 import Users from "./Users";
-import preLoader from '../../Assets/Images/preLoader.gif';
 import Loader from "../../Common/Loader";
+
+// import mapDispatchToProps from "react-redux/lib/connect/mapDispatchToProps";
 
 class UsersContainer extends React.Component {
     constructor(props) {
@@ -67,7 +61,8 @@ const mapStateToProps = (state) => {
         isFetching: state.usersPage.isFetching,
     }
 };
-const mapDispatchToProps = (dispatch) => {
+
+/*const mapDispatchToProps = (dispatch) => {
     return {
         follow: (userId) => {
             dispatch(followAC(userId))
@@ -88,5 +83,9 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(fetchingToggleAC(isFetching))
         },
     }
-};
-export default connect(mapStateToProps, mapDispatchToProps)(UsersContainer);
+};*/   // старая версия mapDispatсhToProps на случай, хз какой :)
+
+export default connect(mapStateToProps, {
+    follow, unfollow, setUsers,
+    setCurrentPage, setTotalCount, fetchingToggle
+})(UsersContainer);
