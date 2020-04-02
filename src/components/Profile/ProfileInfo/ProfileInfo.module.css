@@ -1,3 +1,6 @@
-.DescriptionBlock{
-    padding: 10px;
+.DescriptionBlock img{
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }

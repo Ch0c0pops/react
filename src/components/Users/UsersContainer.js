@@ -5,8 +5,6 @@ import * as axios from "axios";
 import Users from "./Users";
 import Loader from "../../Common/Loader";
 
-// import mapDispatchToProps from "react-redux/lib/connect/mapDispatchToProps";
-
 class UsersContainer extends React.Component {
     constructor(props) {
         super(props)

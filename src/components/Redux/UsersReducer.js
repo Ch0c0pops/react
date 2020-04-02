@@ -7,7 +7,7 @@ const FETCHING_TOGGLE = 'FETCHING_TOGGLE';
 
 let initialReducer = {
     users: [],
-    pageSize: 3,
+    pageSize: 50,
     totalUsersCount: 14,
     currentPage: 1,
     isFetching: false,
