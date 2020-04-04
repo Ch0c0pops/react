@@ -16,3 +16,4 @@ const API_KEY = '5b5f72f1-a8a7-4748-9e84-4f7b48d7955a';
         </BrowserRouter>, document.getElementById('root'));
 
 serviceWorker.unregister();
+store=window.store;
