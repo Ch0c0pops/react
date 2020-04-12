@@ -1,6 +1,9 @@
 import React from "react";
 import {connect} from "react-redux";
-import {follow, fetchingToggle, setCurrentPage, setTotalCount, setUsers, unfollow} from "../Redux/UsersReducer";
+import {
+    follow, fetchingToggle, setCurrentPage,
+    setTotalCount, setUsers, unfollow, followingToggle
+} from "../Redux/UsersReducer";
 import * as axios from "axios";
 import Users from "./Users";
 import Loader from "../../Common/Loader";
@@ -13,7 +16,6 @@ class UsersContainer extends React.Component {
     };
 
     componentDidMount() {
-
         this.props.fetchingToggle(true);
         usersAPI.getUsers(this.props.currentPage, this.props.pageSize)
 
@@ -46,6 +48,8 @@ class UsersContainer extends React.Component {
                 follow={this.props.follow}
                 unfollow={this.props.unfollow}
                 usersPageChanged={this.usersPageChanged}
+                followingToggle={this.props.followingToggle}
+                followRequest={this.props.followRequest}
             />
         </>
     };
@@ -59,6 +63,7 @@ const mapStateToProps = (state) => {
         totalUsersCount: state.usersPage.totalUsersCount,
         currentPage: state.usersPage.currentPage,
         isFetching: state.usersPage.isFetching,
+        followRequest: state.usersPage.followRequest
     }
 };
 
@@ -86,6 +91,6 @@ const mapStateToProps = (state) => {
 };*/   // старая версия mapDispatсhToProps на случай, хз какой :)
 
 export default connect(mapStateToProps, {
-    follow, unfollow, setUsers,
-    setCurrentPage, setTotalCount, fetchingToggle
+    follow, unfollow, setUsers, setCurrentPage,
+    setTotalCount, fetchingToggle, followingToggle
 })(UsersContainer);

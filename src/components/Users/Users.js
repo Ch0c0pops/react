@@ -2,12 +2,10 @@ import React from 'react';
 import styles from "./Users.module.css";
 import userAvatar from "../../Assets/Images/userAvatar.jpg";
 import {NavLink} from "react-router-dom";
-import * as axios from "axios";
 import {followAPI, usersAPI} from "../../API/API";
 
 
 let Users = (props) => {
-
     let pagesAmount = Math.ceil(props.totalUsersCount / props.pageSize);
     let pages = [];
     for (let i = 1; i <= pagesAmount; i++) {
@@ -33,22 +31,28 @@ let Users = (props) => {
            </div>
             <div>
                 {u.followed ?
-                    <button onClick={() => {
+                    <button disabled={props.followRequest} onClick={() => {
+                        props.followingToggle(true);
                         followAPI.unfollow(u.id)
                             .then(response => {
                                 if (response.resultCode === 0) {
                                     props.unfollow(u.id)
                                 }
+                                props.followingToggle(false);
                             })
+
                     }}>unfollow</button>
 
-                    : <button onClick={() => {
+                    : <button disabled={props.followRequest} onClick={() => {
+                        props.followingToggle(true);
                         followAPI.follow(u.id)
                             .then(response => {
                                 if (response.resultCode === 0) {
                                     props.follow(u.id)
                                 }
+                                props.followingToggle(false);
                             })
+
                     }}>follow</button>}
             </div>
        </span>
