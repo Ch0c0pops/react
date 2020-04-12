@@ -31,26 +31,28 @@ let Users = (props) => {
            </div>
             <div>
                 {u.followed ?
-                    <button disabled={props.followRequest} onClick={() => {
-                        props.followingToggle(true);
+                    <button disabled={props.followRequest.some(id=> id === u.id)}
+
+                            onClick={() => {
+                        props.followingToggle(true, u.id);
                         followAPI.unfollow(u.id)
                             .then(response => {
                                 if (response.resultCode === 0) {
                                     props.unfollow(u.id)
                                 }
-                                props.followingToggle(false);
+                                props.followingToggle(false, u.id);
                             })
 
                     }}>unfollow</button>
 
-                    : <button disabled={props.followRequest} onClick={() => {
-                        props.followingToggle(true);
+                    : <button disabled={props.followRequest.some(id=> id === u.id)} onClick={() => {
+                        props.followingToggle(true, u.id);
                         followAPI.follow(u.id)
                             .then(response => {
                                 if (response.resultCode === 0) {
                                     props.follow(u.id)
                                 }
-                                props.followingToggle(false);
+                                props.followingToggle(false, u.id);
                             })
 
                     }}>follow</button>}

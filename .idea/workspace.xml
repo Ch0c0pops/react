@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Redux/UsersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/UsersReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,6 +155,8 @@
       <workItem from="1586284042025" duration="4585000" />
       <workItem from="1586340411005" duration="597000" />
       <workItem from="1586456644050" duration="3286000" />
+      <workItem from="1586691551845" duration="148000" />
+      <workItem from="1586691714580" duration="4134000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>

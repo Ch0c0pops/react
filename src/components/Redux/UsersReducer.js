@@ -12,7 +12,7 @@ let initialReducer = {
     totalUsersCount: 14,
     currentPage: 1,
     isFetching: false,
-    followRequest: false
+    followRequest: []
 };
 
 const usersReducer = (state = initialReducer, action) => {
@@ -52,7 +52,9 @@ const usersReducer = (state = initialReducer, action) => {
             return {...state, isFetching: action.isFetching
             }
         case FOLLOWING_TOGGLE:
-            return {...state, followRequest: action.followRequest
+            return {...state,
+                followRequest: action.followRequest ? [...state.followRequest, action.userId]
+                    : state.followRequest.filter(id => id !== action.userId)
             }
         default:
             return state;
@@ -78,8 +80,8 @@ export const setTotalCount = (totalCount) => {
 export const fetchingToggle = (isFetching) => {
     return {type: FETCHING_TOGGLE, isFetching}
 };
-export const followingToggle = (followRequest) => {
-    return {type: FOLLOWING_TOGGLE, followRequest}
+export const followingToggle = (followRequest, userId) => {
+    return {type: FOLLOWING_TOGGLE, followRequest, userId}
 };
 
 
