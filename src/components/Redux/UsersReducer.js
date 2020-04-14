@@ -1,3 +1,5 @@
+import {followAPI, usersAPI} from "../../API/API";
+
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS = 'SET_USERS';
@@ -43,16 +45,20 @@ const usersReducer = (state = initialReducer, action) => {
                 users: [...action.users]
             }
         case SET_CURRENT_PAGE:
-            return {...state, currentPage: action.p
+            return {
+                ...state, currentPage: action.p
             }
         case SET_TOTAL_COUNT:
-            return {...state, totalUsersCount: action.totalCount
+            return {
+                ...state, totalUsersCount: action.totalCount
             }
         case FETCHING_TOGGLE:
-            return {...state, isFetching: action.isFetching
+            return {
+                ...state, isFetching: action.isFetching
             }
         case FOLLOWING_TOGGLE:
-            return {...state,
+            return {
+                ...state,
                 followRequest: action.followRequest ? [...state.followRequest, action.userId]
                     : state.followRequest.filter(id => id !== action.userId)
             }
@@ -84,6 +90,43 @@ export const followingToggle = (followRequest, userId) => {
     return {type: FOLLOWING_TOGGLE, followRequest, userId}
 };
 
+export const getUsersThunkCreator = (currentPage, pageSize) => {
+    return (dispatch) => {
+        dispatch(fetchingToggle(true));
+        usersAPI.getUsers(currentPage, pageSize)
+            .then(data => {
+                dispatch(fetchingToggle(false));
+                dispatch(setUsers(data.items));
+                dispatch(setTotalCount(data.totalCount));
+            })
 
+    };
+}
+
+export const unfollowThunk = (userId) => {
+    return (dispatch) => {
+        dispatch(followingToggle(true, userId));
+        followAPI.unfollow(userId)
+            .then(response => {
+                if (response.resultCode === 0) {
+                    dispatch(unfollow(userId))
+                }
+                dispatch(followingToggle(false, userId));
+            })
+    }
+};
+
+export const followThunk = (userId) => {
+    return (dispatch) => {
+        dispatch(followingToggle(true, userId));
+        followAPI.follow(userId)
+            .then(response => {
+                if (response.resultCode === 0) {
+                    dispatch(follow(userId))
+                }
+                dispatch(followingToggle(false, userId));
+            })
+    }
+};
 
 export default usersReducer;
