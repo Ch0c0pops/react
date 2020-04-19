@@ -29,7 +29,7 @@ class UsersContainer extends React.Component {
 
     usersPageChanged = (p) => {
         this.props.setCurrentPage(p);
-        this.props.getUsersThunkCreator(p, this.props.pageSize)
+        this.props.getUsersThunkCreator(p, this.props.pageSize);
     };
 
     render() {

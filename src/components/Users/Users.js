@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./Users.module.css";
 import userAvatar from "../../Assets/Images/userAvatar.jpg";
 import {NavLink} from "react-router-dom";
-import {followAPI, usersAPI} from "../../API/API";
+
 
 
 let Users = (props) => {
@@ -35,15 +35,6 @@ let Users = (props) => {
 
                             onClick={() => {
                                 props.unfollowThunk(u.id);
-                                /* props.followingToggle(true, u.id);
-                                 followAPI.unfollow(u.id)
-                                     .then(response => {
-                                         if (response.resultCode === 0) {
-                                             props.unfollow(u.id)
-                                         }
-                                         props.followingToggle(false, u.id);
-                                     })*/
-
                             }}>unfollow</button>
 
                     : <button disabled={props.followRequest.some(id => id === u.id)} onClick={() => {

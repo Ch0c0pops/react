@@ -106,7 +106,7 @@ export const getUsersThunkCreator = (currentPage, pageSize) => {
 export const unfollowThunk = (userId) => {
     return (dispatch) => {
         dispatch(followingToggle(true, userId));
-        followAPI.unfollow(userId)
+        usersAPI.unfollow(userId)
             .then(response => {
                 if (response.resultCode === 0) {
                     dispatch(unfollow(userId))
@@ -119,7 +119,7 @@ export const unfollowThunk = (userId) => {
 export const followThunk = (userId) => {
     return (dispatch) => {
         dispatch(followingToggle(true, userId));
-        followAPI.follow(userId)
+        usersAPI.follow(userId)
             .then(response => {
                 if (response.resultCode === 0) {
                     dispatch(follow(userId))
