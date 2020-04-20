@@ -4,10 +4,8 @@ import {
     follow, fetchingToggle, setCurrentPage,
     setTotalCount, setUsers, unfollow, followingToggle, getUsersThunkCreator, unfollowThunk, followThunk
 } from "../Redux/UsersReducer";
-import * as axios from "axios";
 import Users from "./Users";
 import Loader from "../../Common/Loader";
-import {usersAPI} from "../../API/API";
 
 
 class UsersContainer extends React.Component {
@@ -17,14 +15,6 @@ class UsersContainer extends React.Component {
 
     componentDidMount() {
         this.props.getUsersThunkCreator(this.props.currentPage, this.props.pageSize);
-        /* this.props.fetchingToggle(true);
-         usersAPI.getUsers(this.props.currentPage, this.props.pageSize)
-
-             .then(data => {
-                 this.props.fetchingToggle(false);
-                 this.props.setUsers(data.items);
-                 this.props.setTotalCount(data.totalCount);
-             })*/
     };
 
     usersPageChanged = (p) => {

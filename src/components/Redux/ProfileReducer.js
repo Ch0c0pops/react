@@ -1,5 +1,4 @@
-import {authAPI, followAPI, profileAPI, usersAPI} from "../../API/API";
-import {followingToggle, unfollow} from "./UsersReducer";
+import {usersAPI} from "../../API/API";
 
 const ADD_POST = 'ADD_POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
@@ -60,8 +59,8 @@ export const getUserProfileThunkCreator = (userId) => {
     return (dispatch) => {
         usersAPI.getUserProfile(userId)
             .then(data => {
+                debugger;
                 dispatch(setUsersProfile(data));
-
             })
     }
 };
