@@ -33,5 +33,5 @@ let UrlDataContainer = withRouter(authRedirectComponent);               до п�
 
 export default connect(mapStateToProps, {getUserProfileThunkCreator})(UrlDataContainer);*/
 
-export default compose(connect(mapStateToProps, {getUserProfileThunkCreator}), withRouter, withAuthRedirect)
+export default compose(connect(mapStateToProps, {getUserProfileThunkCreator}), withRouter/*, withAuthRedirect*/)
 (ProfileContainer);

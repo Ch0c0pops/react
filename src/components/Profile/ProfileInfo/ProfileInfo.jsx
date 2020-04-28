@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './../ProfileInfo/ProfileInfo.module.css';
 import Loader from "../../../Common/Loader";
-
+import Status from './Status';
 
 const ProfileInfo = (props) => {
     if (!props.profile) {
@@ -14,7 +14,7 @@ const ProfileInfo = (props) => {
         <div className={classes.DescriptionBlock}>
             <img src={props.profile.photos.large}></img>
 
-            ava + description
+            <Status status={'This is a test message'}/>
 
         </div>
     </div>
