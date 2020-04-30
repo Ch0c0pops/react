@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/Status.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/Status.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/Status.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Redux/ProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/ProfileReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +171,10 @@
       <workItem from="1587410196754" duration="37000" />
       <workItem from="1587490093186" duration="3471000" />
       <workItem from="1587892425894" duration="2660000" />
-      <workItem from="1588058043685" duration="7036000" />
+      <workItem from="1588058043685" duration="8224000" />
+      <workItem from="1588156003097" duration="1906000" />
+      <workItem from="1588174719002" duration="6332000" />
+      <workItem from="1588244498686" duration="4472000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>

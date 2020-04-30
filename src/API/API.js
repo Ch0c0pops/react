@@ -1,4 +1,5 @@
 import * as axios from "axios";
+import warning from "react-redux/lib/utils/warning";
 
 const instance = axios.create({
     withCredentials: true,
@@ -26,12 +27,23 @@ export const usersAPI = {
             })
     },
     getUserProfile(userId) {
-        return instance.get(`Profile/` + userId)
-            .then(response => {
-                return response.data
-            })
+        warning('метод устарел. Используйте profileAPI.getUserProfile')
+        return profileAPI.getUserProfile(userId);
     }
 };
+
+export const profileAPI = {
+    getUserProfile(userId) {
+        return instance.get(`profile/` + userId)
+    },
+    getUserStatus(userId) {
+        return instance.get(`profile/status/` + userId)
+    },
+    updateStatus(status) {
+        return instance.put(`profile/status`, {status: status})
+    },
+};
+
 
 export const authAPI = {
     getAuth() {
