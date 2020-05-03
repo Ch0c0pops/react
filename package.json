@@ -1,4 +1,4 @@
- {
+{
   "name": "react-kabzda-1",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "redux": "^4.0.5",
+    "redux-form": "^8.3.5",
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
