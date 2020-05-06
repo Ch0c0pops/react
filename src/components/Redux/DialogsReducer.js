@@ -27,7 +27,7 @@ const dialogsPageReducer = (state = initialReducer, action) => {
             newMessageBody: action.body
         }
         case SEND_MESSAGE:
-            let body= state.newMessageBody;
+            let body= action.data;
             return {
                 ...state,
                 newMessageBody:'',
@@ -39,8 +39,8 @@ const dialogsPageReducer = (state = initialReducer, action) => {
             return state;
     }
 }
-export const sendMessageActionCreator = () => {
-    return {type: SEND_MESSAGE}
+export const sendMessageActionCreator = (data) => {
+    return {type: SEND_MESSAGE, data}
 };
 export const updateNewMessageBodyActionCreator = (body) => {
     return {type: UPDATE_NEW_MESSAGE_BODY, body: body}

@@ -34,10 +34,10 @@ let store = {
         console.log('hi');
     },
 
-    updateNewPostText(newText) {
+    /*updateNewPostText(newText) {
         this._state.profilePage.newPostText = newText;  //эта функция не нужна в принципе с приходом ProfilePageReducer
         this.rerenderEntireTree(this._state);
-    },
+    },*/
     _callsubscriber() {
         console.log('state has been changed')
     },
