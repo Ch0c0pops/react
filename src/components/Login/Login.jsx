@@ -25,7 +25,7 @@ const ReduxLoginForm = reduxForm({form: 'login'})(LoginForm);
 
 class Login extends React.Component {
     render() {
-        const onSubmit = (values) => console.log(values);
+        const onSubmit = (data) => this.props.loginThunk(data); //console.log(values);
         return <ReduxLoginForm onSubmit={onSubmit}/>;
     }
 };

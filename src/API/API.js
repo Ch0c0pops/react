@@ -52,5 +52,8 @@ export const authAPI = {
                     return response.data
                 }
             )
-    }
+    },
+   /* getLoggedIn(data){
+        return instance.put(`/auth/login`, data) //апи до времен логинизации
+    }*/
 };

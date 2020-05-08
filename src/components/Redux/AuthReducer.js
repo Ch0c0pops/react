@@ -2,6 +2,7 @@ import {authAPI} from "../../API/API";
 
 const SET_AUTH_USER_DATA = 'SET_AUTH_USER_DATA';
 const FETCHING_TOGGLE = 'FETCHING_TOGGLE';
+/*const LOG_IN = 'LOG_IN'; */                       //до логинизации
 
 let initialReducer = {
     id: null,
@@ -24,6 +25,11 @@ const authReducer = (state = initialReducer, action) => {
                 ...state,
                 isFetching: action.isFetching
             }
+       /* case LOG_IN:
+            return {                            //до логинизации
+                ...state,
+                id: action.userId
+            }*/
 
         default:
             return state;
@@ -38,6 +44,9 @@ export const setAuthUserData = (id, login, email) => {
 export const fetchingToggle = (isFetching) => {
     return {type: FETCHING_TOGGLE, isFetching}
 };
+/*export const loggedIn = (userId) => {    //АС до времен логинизации
+    return {type: LOG_IN, userId}
+};*/
 
 export const getAuthThunkCreator = (fetchingToggle, setAuthUserData) => {
     return (dispatch) => {
@@ -52,6 +61,19 @@ export const getAuthThunkCreator = (fetchingToggle, setAuthUserData) => {
                 }
             )
     }
-}
+};
+
+/*export const  loginThunkCreator = (data, loggedIn) => { //санка до времен логинизации
+    return (dispatch) => {
+        authAPI.getLoggedIn(data, loggedIn)
+            .then(data => {
+                    if (data.resultCode === 0) {
+                        let id = data.userId;
+                        dispatch(loggedIn(id));
+                    }
+                }
+            )
+    }
+};*/
 
 export default authReducer;

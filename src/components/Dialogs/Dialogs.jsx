@@ -4,7 +4,7 @@ import DialogsItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import {Redirect} from "react-router-dom";
 import {Field, reduxForm} from "redux-form";
-import handleSubmit from "redux-form/lib/handleSubmit";
+
 
 
 const newMessageForm = (props) => {
@@ -27,19 +27,13 @@ const Dialogs = (props) => {
         dialog => <DialogsItem name={dialog.name} key={dialog.id} id={dialog.id}/>
     );
     let messagesElements = state.messagesData.map(message => <Message message={message.message} key={message.id}/>);
-    let newMessageBody = state.newMessageBody;
-
     let onSendMessageClick = (data) => {
         props.sendMessage(data.myNewMessage);
-    }
-    let onNewMessageChange = (event) => {
-        let body = event.target.value;
-        props.updateNewMessageBody(body);
-    }
+    };
 
-    /*if (!props.isAuth) {
+    if (!props.isAuth) {
         return <Redirect to={'/Login'}/>
-    }*/
+    }
     return (
         <div className={classes.dialogs}>
             <div className={classes.dialogsItems}>

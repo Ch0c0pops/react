@@ -3,9 +3,6 @@ import classes from './MyPosts.module.css';
 import Post from './Post/Post';
 import {Field, reduxForm} from "redux-form";
 
-
-let newPostElement = React.createRef();
-
 const newPostForm = (props) => {
     return (<form onSubmit={props.handleSubmit}>
             <div>
@@ -26,11 +23,6 @@ const MyPosts = (props) => {
     let addNewPost = (data) => {
         props.addPost(data.newPost);
     };
-
-   /* let onTextChange = () => {
-        let txt = newPostElement.current.value; //с подключением библиотеки redux-form надобность в обработчике отпала
-        props.updateNewPostText(txt);
-    };*/
     return <div className={classes.postsBlock}>
 
         <div>
