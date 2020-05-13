@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from "react-redux";
-import {setAuthUserData, fetchingToggle, getAuthThunkCreator} from "../Redux/AuthReducer";
+import {setAuthUserData, fetchingToggle, getAuthThunkCreator, logoutThunk, loginThunk} from "../Redux/AuthReducer";
 import Header from "./Header";
 import Loader from "../../Common/Loader";
 import classes from './../Header/Header.module.css';
@@ -27,4 +27,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, {setAuthUserData, fetchingToggle, getAuthThunkCreator})(HeaderContainer);
+export default connect(mapStateToProps, {setAuthUserData, fetchingToggle, getAuthThunkCreator, logoutThunk})(HeaderContainer);

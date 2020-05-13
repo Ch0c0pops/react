@@ -53,7 +53,10 @@ export const authAPI = {
                 }
             )
     },
-   /* getLoggedIn(data){
-        return instance.put(`/auth/login`, data) //апи до времен логинизации
-    }*/
+    login(email, password, rememberMe){
+        return instance.post(`/auth/login`, {email, password, rememberMe})
+    },
+    logout(){
+        return instance.delete(`/auth/login`)
+    }
 };

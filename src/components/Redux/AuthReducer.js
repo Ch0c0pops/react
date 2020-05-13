@@ -2,7 +2,6 @@ import {authAPI} from "../../API/API";
 
 const SET_AUTH_USER_DATA = 'SET_AUTH_USER_DATA';
 const FETCHING_TOGGLE = 'FETCHING_TOGGLE';
-/*const LOG_IN = 'LOG_IN'; */                       //до логинизации
 
 let initialReducer = {
     id: null,
@@ -17,63 +16,66 @@ const authReducer = (state = initialReducer, action) => {
         case SET_AUTH_USER_DATA:
             return {
                 ...state,
-                ...action.data,
-                isAuth: true
+                ...action.data
             }
         case FETCHING_TOGGLE:
             return {
                 ...state,
                 isFetching: action.isFetching
             }
-       /* case LOG_IN:
-            return {                            //до логинизации
-                ...state,
-                id: action.userId
-            }*/
-
         default:
             return state;
     }
 }
 
-export const setAuthUserData = (id, login, email) => {
+export const setAuthUserData = (id, login, email, isAuth) => {
 
-    return {type: SET_AUTH_USER_DATA, data: {id, login, email}}
+    return {type: SET_AUTH_USER_DATA, data: {id, login, email, isAuth}}
 
 };
 export const fetchingToggle = (isFetching) => {
     return {type: FETCHING_TOGGLE, isFetching}
 };
-/*export const loggedIn = (userId) => {    //АС до времен логинизации
-    return {type: LOG_IN, userId}
-};*/
 
-export const getAuthThunkCreator = (fetchingToggle, setAuthUserData) => {
+export const getAuthThunkCreator = () => {
     return (dispatch) => {
         dispatch(fetchingToggle(true));
         authAPI.getAuth(fetchingToggle, setAuthUserData)
-            .then(data => {
-                    if (data.resultCode === 0) {
+            .then(response => {
+                    if (response.resultCode === 0) {
                         dispatch(fetchingToggle(false));
-                        let {id, login, email} = data.data;
-                        dispatch(setAuthUserData(id, login, email));
+                        let {id, login, email} = response.data;
+                        dispatch(setAuthUserData(id, login, email, true));
                     }
                 }
             )
     }
 };
 
-/*export const  loginThunkCreator = (data, loggedIn) => { //санка до времен логинизации
+export const loginThunk = (email, password, rememberMe) => {
     return (dispatch) => {
-        authAPI.getLoggedIn(data, loggedIn)
-            .then(data => {
-                    if (data.resultCode === 0) {
-                        let id = data.userId;
-                        dispatch(loggedIn(id));
+        authAPI.login(email, password, rememberMe = false)
+            .then(response => {
+                    if (response.data.resultCode === 0) {
+                        dispatch(getAuthThunkCreator());
+                    }
+                    if (response.data.resultCode === 1) {
+                           alert('Incorrect password');
                     }
                 }
             )
     }
-};*/
+};
 
+export const logoutThunk = () => {
+    return (dispatch) => {
+        authAPI.logout()
+            .then(response => {
+                    if (response.data.resultCode === 0) {
+                        dispatch(setAuthUserData(null, null, null, false));
+                    }
+                }
+            )
+    }
+};
 export default authReducer;
