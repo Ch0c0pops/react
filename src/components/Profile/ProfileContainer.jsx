@@ -9,10 +9,12 @@ import {compose} from "redux";
 class ProfileContainer extends React.Component {
 
     componentDidMount() {
+        debugger;
         let userId = this.props.match.params.userId;
         if (!userId) {
-            userId = 6505; //хардкод на первое время
-        };
+            userId = this.props.userId//6505; //хардкод на первое время
+        }
+        ;
         this.props.getUserProfileThunkCreator(userId);
         this.props.getUserStatus(userId);
     }
@@ -25,7 +27,8 @@ class ProfileContainer extends React.Component {
 const mapStateToProps = (state) => {
     return {
         profile: state.profilePage.profile,
-       status: state.profilePage.status,
+        status: state.profilePage.status,
+        userId: state.auth.id
     }
 };
 /*let authRedirectComponent = withAuthRedirect(ProfileContainer);
@@ -33,5 +36,9 @@ let UrlDataContainer = withRouter(authRedirectComponent);               вид �
 
 export default connect(mapStateToProps, {getUserProfileThunkCreator})(UrlDataContainer);*/
 
-export default compose(connect(mapStateToProps, {getUserProfileThunkCreator, getUserStatus, updateStatus}), withRouter/*, withAuthRedirect*/)
+export default compose(connect(mapStateToProps, {
+    getUserProfileThunkCreator,
+    getUserStatus,
+    updateStatus
+}), withRouter/*, withAuthRedirect*/)
 (ProfileContainer);

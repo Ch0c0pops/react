@@ -6,7 +6,7 @@ import {maxLengthCreator, required} from "../../Utilits/Validators";
 import {connect} from "react-redux";
 import {loginThunk, logoutThunk} from "../Redux/AuthReducer";
 import {Redirect} from "react-router-dom";
-
+import styles from './Login.module.css'
 
 const maxLength30 = maxLengthCreator(30);
 
@@ -24,6 +24,7 @@ let LoginForm = (props) => {
             <div>
                 <Field component="input" type="checkbox" name={'rememberMe'}/> Запомнить меня
             </div>
+            <div>{props.error? <div className={styles.authError}>{props.error}</div>: null}</div>
             <div>
                 <button type="submit">Войти</button>
             </div>
