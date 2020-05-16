@@ -38,10 +38,9 @@ export const fetchingToggle = (isFetching) => {
     return {type: FETCHING_TOGGLE, isFetching}
 };
 
-export const getAuthThunkCreator = () => {
-    return (dispatch) => {
+export const getAuthThunkCreator = () => (dispatch) => {
         dispatch(fetchingToggle(true));
-        authAPI.getAuth(fetchingToggle, setAuthUserData)
+         return authAPI.getAuth(fetchingToggle, setAuthUserData)
             .then(response => {
                     if (response.resultCode === 0) {
                         dispatch(fetchingToggle(false));
@@ -50,7 +49,7 @@ export const getAuthThunkCreator = () => {
                     }
                 }
             )
-    }
+
 };
 
 export const loginThunk = (email, password, rememberMe) => {

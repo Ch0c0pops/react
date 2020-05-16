@@ -9,10 +9,12 @@ import {compose} from "redux";
 class ProfileContainer extends React.Component {
 
     componentDidMount() {
-        debugger;
         let userId = this.props.match.params.userId;
-        if (!userId) {
-            userId = this.props.userId//6505; //хардкод на первое время
+        if (!userId) {                  //6505; //хардкод на первое время
+            userId = this.props.userId
+            if(!userId){
+                this.props.history.push('/login')
+            };
         }
         ;
         this.props.getUserProfileThunkCreator(userId);

@@ -7,9 +7,7 @@ import classes from './../Header/Header.module.css';
 
 class HeaderContainer extends React.Component {
 
-    componentDidMount() {
-        this.props.getAuthThunkCreator(this.props.fetchingToggle, this.props.setAuthUserData);
-    }
+
 
     render() {
         return <>
