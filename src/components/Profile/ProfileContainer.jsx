@@ -10,7 +10,7 @@ class ProfileContainer extends React.Component {
 
     componentDidMount() {
         let userId = this.props.match.params.userId;
-        if (!userId) {                  //6505; //хардкод на первое время
+        if (!userId) {//6505; //хардкод на первое время
             userId = this.props.userId
             if(!userId){
                 this.props.history.push('/login')
