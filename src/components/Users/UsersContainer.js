@@ -12,7 +12,7 @@ import {
     currentPageSelector, followRequestSelector,
     isFetchingSelector,
     pageSizeSelector,
-    totalUsersCountSelector, usersSelector
+    totalUsersCountSelector, usersReSelector
 } from "../Redux/UsersSelectors";
 
 
@@ -46,12 +46,11 @@ class UsersContainer extends React.Component {
             />
         </>
     };
-
-};
+}
 
 const mapStateToProps = (state) => {
     return {
-        users: usersSelector(state),
+        users: usersReSelector(state),
         pageSize: pageSizeSelector(state),
         totalUsersCount: totalUsersCountSelector(state),
         currentPage: currentPageSelector(state),

@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Redux/UsersSelectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/StatusWithHooks.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Redux/UsersSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/UsersSelectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="react-kabzda-1" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,9 +29,13 @@
   </component>
   <component name="ProjectId" id="1U4wQzJotYlUnaObziyD1A9cbLm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,24 +46,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\ProfileInfo" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Redux" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\Common" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Header" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile" />
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Users" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -189,6 +180,16 @@
       <workItem from="1589488655259" duration="173000" />
       <workItem from="1589617134473" duration="8913000" />
       <workItem from="1589705203510" duration="1860000" />
+      <workItem from="1589828372937" duration="187000" />
+      <workItem from="1589828854903" duration="79000" />
+      <workItem from="1589828946494" duration="231000" />
+      <workItem from="1589829197069" duration="837000" />
+      <workItem from="1589830086140" duration="277000" />
+      <workItem from="1589830420163" duration="4000" />
+      <workItem from="1589831125110" duration="2828000" />
+      <workItem from="1590000982170" duration="1989000" />
+      <workItem from="1590005785069" duration="1424000" />
+      <workItem from="1590089574157" duration="2408000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
@@ -236,7 +237,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -253,13 +254,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="react31" />
@@ -268,6 +268,24 @@
     <MESSAGE value="react40" />
     <MESSAGE value="react43" />
     <option name="LAST_COMMIT_MESSAGE" value="react43" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="617" height="2" key="GridCell.Tab.0.bottom" timestamp="1590005763087">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="617" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590005763087" />
+    <state width="617" height="2" key="GridCell.Tab.0.center" timestamp="1590005763087">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="617" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590005763087" />
+    <state width="617" height="2" key="GridCell.Tab.0.left" timestamp="1590005763087">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="617" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590005763087" />
+    <state width="617" height="2" key="GridCell.Tab.0.right" timestamp="1590005763087">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="617" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590005763087" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
