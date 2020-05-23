@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/StatusWithHooks.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Redux/UsersSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/UsersSelectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/StatusWithHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/StatusWithHooks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/myPosts/MyPosts.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +186,8 @@
       <workItem from="1589831125110" duration="2828000" />
       <workItem from="1590000982170" duration="1989000" />
       <workItem from="1590005785069" duration="1424000" />
-      <workItem from="1590089574157" duration="2408000" />
+      <workItem from="1590089574157" duration="2653000" />
+      <workItem from="1590224788712" duration="4568000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
@@ -270,22 +268,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="react43" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="617" height="2" key="GridCell.Tab.0.bottom" timestamp="1590005763087">
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom" timestamp="1590092863548">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="617" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590005763087" />
-    <state width="617" height="2" key="GridCell.Tab.0.center" timestamp="1590005763087">
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590092863548" />
+    <state width="1259" height="2" key="GridCell.Tab.0.center" timestamp="1590092863548">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="617" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590005763087" />
-    <state width="617" height="2" key="GridCell.Tab.0.left" timestamp="1590005763087">
+    <state width="1259" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590092863548" />
+    <state width="1259" height="2" key="GridCell.Tab.0.left" timestamp="1590092863548">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="617" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590005763087" />
-    <state width="617" height="2" key="GridCell.Tab.0.right" timestamp="1590005763087">
+    <state width="1259" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590092863548" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right" timestamp="1590092863548">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="617" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590005763087" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590092863548" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
