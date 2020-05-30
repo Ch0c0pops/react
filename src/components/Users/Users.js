@@ -1,63 +1,15 @@
 import React from 'react';
-import styles from "./Users.module.css";
-import userAvatar from "../../Assets/Images/userAvatar.jpg";
-import {NavLink} from "react-router-dom";
+import User from './User';
+import UsersPagination from "../../Common/UsersPagination";
 
-
-
-let Users = (props) => {
-    let pagesAmount = Math.ceil(props.totalUsersCount / props.pageSize);
-    let pages = [];
-    for (let i = 1; i <= pagesAmount; i++) {
-        pages.push(i)
-    }
-    ;
-
+let Users = ({totalUsersCount, pageSize, currentPage, usersPageChanged, users, followRequest, followThunk,
+                 unfollowThunk, ...props}) => {
     return <div>
-        <div>
-            {pages.map(p => {
-                return <span className={props.currentPage === p && styles.activeButton}
-                             onClick={() => props.usersPageChanged(p)}>{p}</span>
-            })}
-        </div>
+        <UsersPagination totalUsersCount={totalUsersCount} pageSize={pageSize}
+                         currentPage={currentPage} usersPageChanged={usersPageChanged}/>
 
-        {props.users.map(u => <div key={u.id}>
-
-       <span>
-           <div className={styles.pic}>
-               <NavLink to={'/Profile/' + u.id}>
-               <img src={u.photos.small != null ? u.photos.small : userAvatar}/>
-           </NavLink>
-           </div>
-            <div>
-                {u.followed ?
-                    <button disabled={props.followRequest.some(id => id === u.id)}
-
-                            onClick={() => {
-                                props.unfollowThunk(u.id);
-                            }}>unfollow</button>
-
-                    : <button disabled={props.followRequest.some(id => id === u.id)} onClick={() => {
-                        props.followThunk(u.id);
-
-                    }}>follow</button>}
-            </div>
-       </span>
-
-            <span>
-                <span>
-                    <div>{u.name}</div>
-                    <div>{u.status}</div>
-                </span>
-                <span>
-                    <div>{'u.location.city'}</div>
-                    <div>{'u.location.country'}</div>
-                </span>
-            </span>
-
-        </div>)
-        }
+        {users.map(u => <User key={u.id} user={u} followRequest={followRequest} followThunk={followThunk}
+                              unfollowThunk={unfollowThunk}/>)}
     </div>
 };
-
 export default Users;

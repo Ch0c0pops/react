@@ -27,7 +27,6 @@ class App extends Component {
             return  <Loader/>}
 
         return (
-            <BrowserRouter>
                 <div className='app-wrapper'>
                     <HeaderContainer/>
                     <Nav/>
@@ -42,7 +41,7 @@ class App extends Component {
                         <Route path='/Login' render={() => <Login/>}/>
                     </div>
                 </div>
-            </BrowserRouter>)
+           )
     }
 }
 
