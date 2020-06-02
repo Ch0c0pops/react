@@ -38,43 +38,33 @@ export const fetchingToggle = (isFetching) => {
     return {type: FETCHING_TOGGLE, isFetching}
 };
 
-export const getAuthThunkCreator = () => (dispatch) => {
+export const getAuthThunkCreator = () => async (dispatch) => {
         dispatch(fetchingToggle(true));
-         return authAPI.getAuth(fetchingToggle, setAuthUserData)
-            .then(response => {
+         let response = await authAPI.getAuth(fetchingToggle, setAuthUserData);
                     if (response.resultCode === 0) {
                         dispatch(fetchingToggle(false));
                         let {id, login, email} = response.data;
                         dispatch(setAuthUserData(id, login, email, true));
                     }
-                }
-            )
-
 };
 
 export const loginThunk = (email, password, rememberMe) => {
-    return (dispatch) => {
-        authAPI.login(email, password, rememberMe = false)
-            .then(response => {
+    return async (dispatch) => {
+       let response =  await authAPI.login(email, password, rememberMe = false);
                     if (response.data.resultCode === 0) {
                         dispatch(getAuthThunkCreator());
                     } else {
                         dispatch(stopSubmit('login', {_error: response.data.messages[0]}));
                     }
-                }
-            )
     }
 };
 
 export const logoutThunk = () => {
-    return (dispatch) => {
-        authAPI.logout()
-            .then(response => {
+    return async (dispatch) => {
+        let response = await authAPI.logout();
                     if (response.data.resultCode === 0) {
                         dispatch(setAuthUserData(null, null, null, false));
                     }
-                }
-            )
     }
 };
 export default authReducer;

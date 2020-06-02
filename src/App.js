@@ -11,9 +11,10 @@ import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from "./components/Login/Login";
 import {appIsInitialisedTC} from "./components/Redux/AppReducer";
-import {connect} from "react-redux";
+import {connect, Provider} from "react-redux";
 import {compose} from "redux";
 import Loader from "./Common/Loader";
+import store from "./components/Redux/Redux-Store";
 
 
 class App extends Component {
@@ -50,5 +51,14 @@ const mapStateToProps = (state) => {
         initialised: state.appPage.initialised
     }
 };
+const AppContainer = compose(withRouter, connect(mapStateToProps, {appIsInitialisedTC}))(App);
+const SamuraiJSApp =(props)=>{
+    return (<BrowserRouter>
+        <Provider store={store}>
+            <AppContainer/>
+        </Provider>
+    </BrowserRouter>
+    )
+};
 
-export default compose(withRouter, connect(mapStateToProps, {appIsInitialisedTC}))(App);
+export default SamuraiJSApp;

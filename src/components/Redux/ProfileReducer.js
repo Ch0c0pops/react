@@ -64,30 +64,24 @@ export const deletePostAC= (postId) => {
 };
 
 export const getUserProfileThunkCreator = (userId) => {
-    return (dispatch) => {
-        usersAPI.getUserProfile(userId)
-            .then(response => {
+    return async (dispatch) => {
+        let response = await usersAPI.getUserProfile(userId);
                 dispatch(setUsersProfile(response.data));
-            })
     }
 };
 
 export const getUserStatus = (userId) => {
-    return (dispatch) => {
-        profileAPI.getUserStatus(userId)
-            .then(response => {
+    return async (dispatch) => {
+        let response = await profileAPI.getUserStatus(userId);
                 dispatch(setStatus(response.data));
-            })
     }
 };
 export const updateStatus = (status) => {
-    return (dispatch) => {
-        profileAPI.updateStatus(status)
-            .then(response => {
+    return async (dispatch) => {
+        let response = await profileAPI.updateStatus(status);
                 if (response.data.resultCode === 0) {
                     dispatch(setStatus(status));
                 }
-            })
     }
 };
 
