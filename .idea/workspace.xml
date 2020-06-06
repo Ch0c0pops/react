@@ -4,12 +4,6 @@
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/UsersPagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/UsersPagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Redux/UsersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/UsersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Redux/UsersSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/UsersSelectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +257,7 @@
       <workItem from="1591043272690" duration="92000" />
       <workItem from="1591120414931" duration="5248000" />
       <workItem from="1591376619111" duration="6688000" />
-      <workItem from="1591431076266" duration="1082000" />
+      <workItem from="1591431076266" duration="3039000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
@@ -416,6 +410,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="196" y="70" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1591042894320" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1591434023231">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1591434023231" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
