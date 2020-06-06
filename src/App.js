@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Suspense, lazy} from 'react';
 import './App.css';
 import Nav from './components/Nav/Nav';
 import News from './components/News/News';

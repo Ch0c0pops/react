@@ -10,7 +10,7 @@ export const pageSizeSelector = (state) => {
     return state.usersPage.pageSize
 };
 export const totalUsersCountSelector = (state) => {
-    return state.usersPage.totalUsersCount
+    return state.usersPage.totalItemsCount
 };
 export const currentPageSelector = (state) => {
     return state.usersPage.currentPage

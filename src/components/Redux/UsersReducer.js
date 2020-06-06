@@ -12,7 +12,7 @@ const FOLLOWING_TOGGLE = 'FOLLOWING_TOGGLE';
 let initialReducer = {
     users: [],
     pageSize: 50,
-    totalUsersCount: 14,
+    totalItemsCount: 14,
     currentPage: 1,
     isFetching: false,
     followRequest: []
@@ -53,7 +53,7 @@ const usersReducer = (state = initialReducer, action) => {
             }
         case SET_TOTAL_COUNT:
             return {
-                ...state, totalUsersCount: action.totalCount
+                ...state, totalItemsCount: action.totalCount
             }
         case FETCHING_TOGGLE:
             return {
