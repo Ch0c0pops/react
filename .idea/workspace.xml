@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,15 +44,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\Common" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Users" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Redux" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\ProfileInfo" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\Common" />
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\Common" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.Status component.callback fn should be called">
@@ -81,32 +84,24 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Status component.input shouldn't appear from the start, it should be null" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
       <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/Status.test.jsx" />
-      <test-names>
-        <test-name value="Status component" />
-        <test-name value="input shouldn't appear from the start, it should be null" />
-      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Status component.input shouldnt appear from the start, it should be null" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
       <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/Profile/ProfileInfo/Status.test.jsx" />
-      <test-names>
-        <test-name value="Status component" />
-        <test-name value="input shouldnt appear from the start, it should be null" />
-      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -121,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Jest.Status component.callback fn should be called" />
         <item itemvalue="Jest.Status component.input should appear in editMode" />
-        <item itemvalue="Jest.Status component.input shouldn't appear from the start, it should be null" />
-        <item itemvalue="Jest.Status component.input shouldnt appear from the start, it should be null" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +252,8 @@
       <workItem from="1591043272690" duration="92000" />
       <workItem from="1591120414931" duration="5248000" />
       <workItem from="1591376619111" duration="6688000" />
-      <workItem from="1591431076266" duration="3039000" />
+      <workItem from="1591431076266" duration="3344000" />
+      <workItem from="1591642601179" duration="6378000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
@@ -342,22 +338,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="467" height="438" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1591122193758" />
-    <state width="629" height="183" key="GridCell.Tab.0.bottom" timestamp="1591125722743">
+    <state width="807" height="160" key="GridCell.Tab.0.bottom" timestamp="1591726416824">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="629" height="183" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591125722743" />
-    <state width="629" height="183" key="GridCell.Tab.0.center" timestamp="1591125722743">
+    <state width="807" height="160" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591726416824" />
+    <state width="807" height="160" key="GridCell.Tab.0.center" timestamp="1591726416824">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="629" height="183" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591125722743" />
-    <state width="629" height="183" key="GridCell.Tab.0.left" timestamp="1591125722743">
+    <state width="807" height="160" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591726416824" />
+    <state width="807" height="160" key="GridCell.Tab.0.left" timestamp="1591726416824">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="629" height="183" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591125722743" />
-    <state width="629" height="183" key="GridCell.Tab.0.right" timestamp="1591125722743">
+    <state width="807" height="160" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591726416824" />
+    <state width="807" height="160" key="GridCell.Tab.0.right" timestamp="1591726416824">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="629" height="183" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591125722743" />
+    <state width="807" height="160" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591726416824" />
     <state width="629" height="183" key="GridCell.Tab.1.bottom" timestamp="1591125722743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

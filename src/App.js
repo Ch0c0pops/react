@@ -4,7 +4,7 @@ import Nav from './components/Nav/Nav';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
-import {BrowserRouter, Route, withRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter, Route, withRouter} from "react-router-dom";
 //import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 //import ProfileContainer from "./components/Profile/ProfileContainer";
@@ -56,11 +56,11 @@ const mapStateToProps = (state) => {
 };
 const AppContainer = compose(withRouter, connect(mapStateToProps, {appIsInitialisedTC}))(App);
 const SamuraiJSApp =(props)=>{
-    return (<BrowserRouter>
+    return (<HashRouter basename={process.env.PUBLIC_URL}>
         <Provider store={store}>
             <AppContainer/>
         </Provider>
-    </BrowserRouter>
+    </HashRouter>
     )
 };
 
