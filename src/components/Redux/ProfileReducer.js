@@ -4,6 +4,7 @@ const ADD_POST = 'ADD_POST';
 const SET_USERS_PROFILE = 'SET_USERS_PROFILE';
 const SET_STATUS = 'SET_STATUS';
 const DELETE_POST = 'DELETE_POST';
+const SET_AVATAR= 'SET_AVATAR';
 
 let initialReducer = {
     postsData: [
@@ -11,7 +12,8 @@ let initialReducer = {
         {id: 2, message: 'chicken corn', likes: 25}
     ],
     profile: null,
-    status: null
+    status: null,
+    avatar: null
 };
 
 const profilePageReducer = (state = initialReducer, action) => {
@@ -45,6 +47,12 @@ const profilePageReducer = (state = initialReducer, action) => {
                 postsData: state.postsData.filter(post => post.id != action.postId)
             }
         }
+        case SET_AVATAR: {
+            return {
+                ...state,
+                profile: {...state.profile, photos: action.image}
+            }
+        }
         default:
             return state;
     }
@@ -61,6 +69,9 @@ export const setStatus = (status) => {
 };
 export const deletePostAC= (postId) => {
     return {type: DELETE_POST, postId}
+};
+export const setAvatar= (image) => {
+    return {type: SET_AVATAR, image}
 };
 
 export const getUserProfileThunkCreator = (userId) => {
@@ -85,4 +96,12 @@ export const updateStatus = (status) => {
     }
 };
 
+export const uploadNewAvatar = (image) => {
+    return async (dispatch) => {
+        let response = await profileAPI.uploadAvatar(image);
+        if (response.data.resultCode === 0) {
+            dispatch(setAvatar(response.data.data.photos));
+        }
+    }
+};
 export default profilePageReducer;
