@@ -1,10 +1,12 @@
 import {profileAPI, usersAPI} from "../../API/API";
+import {stopSubmit} from "redux-form";
 
 const ADD_POST = 'ADD_POST';
 const SET_USERS_PROFILE = 'SET_USERS_PROFILE';
 const SET_STATUS = 'SET_STATUS';
 const DELETE_POST = 'DELETE_POST';
 const SET_AVATAR= 'SET_AVATAR';
+const HAS_ERROR= 'HAS_ERROR';
 
 let initialReducer = {
     postsData: [
@@ -13,7 +15,8 @@ let initialReducer = {
     ],
     profile: null,
     status: null,
-    avatar: null
+    avatar: null,
+    error: null
 };
 
 const profilePageReducer = (state = initialReducer, action) => {
@@ -53,6 +56,12 @@ const profilePageReducer = (state = initialReducer, action) => {
                 profile: {...state.profile, photos: action.image}
             }
         }
+        case HAS_ERROR: {
+            return {
+                ...state,
+                error: action.error
+            }
+        }
         default:
             return state;
     }
@@ -72,6 +81,9 @@ export const deletePostAC= (postId) => {
 };
 export const setAvatar= (image) => {
     return {type: SET_AVATAR, image}
+};
+export const hasError= (error) => {
+    return {type: HAS_ERROR, error}
 };
 
 export const getUserProfileThunkCreator = (userId) => {
@@ -101,6 +113,23 @@ export const uploadNewAvatar = (image) => {
         let response = await profileAPI.uploadAvatar(image);
         if (response.data.resultCode === 0) {
             dispatch(setAvatar(response.data.data.photos));
+        }
+    }
+};
+
+export const updateProfile = (profile) => {
+    return async (dispatch, getState) => {
+        const userId = getState().auth.id
+        let response = await profileAPI.updateProfile(profile);
+        if (response.data.resultCode === 0) {
+            dispatch(hasError(false));
+            dispatch(getUserProfileThunkCreator(userId));
+
+        }else {
+           dispatch(hasError(true));
+            dispatch(stopSubmit('profileInfoSettings', {_error: response.data.messages[0] }));
+
+
         }
     }
 };

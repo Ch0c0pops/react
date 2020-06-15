@@ -3,3 +3,6 @@
     margin: 5px;
     color: deeppink;
 }
+.captcha{
+    max-width: 300px;
+}

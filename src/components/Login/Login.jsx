@@ -24,6 +24,12 @@ let LoginForm = (props) => {
             <div>
                 <Field component="input" type="checkbox" name={'rememberMe'}/> Запомнить меня
             </div>
+            {props.captcha && <img className={styles.captcha} src={props.captcha}/> }
+            {props.captcha &&
+                <div>
+                    <Field component={Input}  placeholder="captcha" name='captcha' validate={[required]}/>
+                </div>
+                }
             <div>{props.error? <div className={styles.authError}>{props.error}</div>: null}</div>
             <div>
                 <button type="submit">Войти</button>
@@ -38,13 +44,14 @@ const Login =(props)=> {
             return <Redirect to={'/Profile'}/>
         };
 
-        const onSubmit = (data) => props.loginThunk(data.email, data.password, data.rememberMe); //console.log(values);
-        return <ReduxLoginForm onSubmit={onSubmit}/>;
+        const onSubmit = (data) => props.loginThunk(data.email, data.password, data.rememberMe, data.captcha); //console.log(values);
+        return <ReduxLoginForm onSubmit={onSubmit} captcha={props.captcha}/>;
 };
 
 const mapStateToProps = (state) => {
     return {
         isAuth: state.auth.isAuth,
+        captcha: state.auth.captcha
     }
 };
 

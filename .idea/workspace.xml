@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceab5cf6-de60-44f7-98d9-5200a99028e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfoSettings.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Redux/ProfileSelectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/Status.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/Status.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/StatusWithHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/StatusWithHooks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Redux/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/AuthReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Redux/ProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Redux/ProfileReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Redux" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,14 +53,14 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1" />
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Users" />
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Redux" />
-      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\ProfileInfo" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\Common" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Redux" />
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Profile\ProfileInfo" />
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1" />
+      <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\components\Users" />
       <recent name="C:\Users\79997\Desktop\IT\React\react-kabzda-1\src\Common" />
     </key>
   </component>
@@ -255,7 +263,9 @@
       <workItem from="1591376619111" duration="6688000" />
       <workItem from="1591431076266" duration="3344000" />
       <workItem from="1591642601179" duration="8446000" />
-      <workItem from="1591988835880" duration="6230000" />
+      <workItem from="1591988835880" duration="6269000" />
+      <workItem from="1592036969642" duration="23728000" />
+      <workItem from="1592239969910" duration="9164000" />
     </task>
     <task id="LOCAL-00001" summary="react31">
       <created>1576781729248</created>
@@ -340,22 +350,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="467" height="438" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1591122193758" />
-    <state width="807" height="160" key="GridCell.Tab.0.bottom" timestamp="1591729990893">
+    <state width="801" height="53" key="GridCell.Tab.0.bottom" timestamp="1592251012704">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="807" height="160" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591729990893" />
-    <state width="807" height="160" key="GridCell.Tab.0.center" timestamp="1591729990893">
+    <state width="801" height="53" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592251012704" />
+    <state width="801" height="53" key="GridCell.Tab.0.center" timestamp="1592251012704">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="807" height="160" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591729990893" />
-    <state width="807" height="160" key="GridCell.Tab.0.left" timestamp="1591729990893">
+    <state width="801" height="53" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592251012704" />
+    <state width="801" height="53" key="GridCell.Tab.0.left" timestamp="1592251012704">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="807" height="160" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591729990893" />
-    <state width="807" height="160" key="GridCell.Tab.0.right" timestamp="1591729990893">
+    <state width="801" height="53" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592251012704" />
+    <state width="801" height="53" key="GridCell.Tab.0.right" timestamp="1592251012704">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="807" height="160" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591729990893" />
+    <state width="801" height="53" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592251012704" />
     <state width="629" height="183" key="GridCell.Tab.1.bottom" timestamp="1591125722743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

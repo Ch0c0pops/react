@@ -7,7 +7,8 @@ const Profile = (props) => {
     return (
         <div>
             <ProfileInfo profile={props.profile} status={props.status} updateStatus={props.updateStatus}
-            uploadNewAvatar={props.uploadNewAvatar} isOwner={props.isOwner}/>
+            uploadNewAvatar={props.uploadNewAvatar} isOwner={props.isOwner} /*onSubmit={props.onSubmit}*/
+            updateProfile={props.updateProfile} hasError={props.hasError}/>
             <MyPostsContainer/>
         </div>
     )
