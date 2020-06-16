@@ -101,10 +101,18 @@ export const getUserStatus = (userId) => {
 };
 export const updateStatus = (status) => {
     return async (dispatch) => {
+        try{
         let response = await profileAPI.updateStatus(status);
                 if (response.data.resultCode === 0) {
                     dispatch(setStatus(status));
                 }
+        } catch(error){
+          alert(error.message)      //try catch обработка ошибок,то, что возвращает асинх функция оборачиваем
+            // в try (пытаемся выполнить некое действие), здесь это попытка подгрузить новый статус на сервак,
+            // но я изменил намеренно API KEY (наверное, уже вернул обратно в норм состояние на момент прочтения)
+              //и поэтому подгрузить не получится, выпадет ошибка и catch ее словит, кстати, в теле catch
+              // alert обычно не пишут, можно задиспатчить что-то на событие и т.п.
+        }
     }
 };
 
